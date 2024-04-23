@@ -1,0 +1,39 @@
+#$ TITLE: 7in long range cinematic by userx
+#$ FIRMWARE_VERSION: 4.2
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: TUNE
+#$ STATUS: EXPERIMENTAL
+#$ KEYWORDS: word1, word2, word3
+#$ AUTHOR: Name Lastname / Pilotname
+#$ DESCRIPTION: Description paragraph1
+#$ DESCRIPTION: Description pagagraph2  (as many description paragraphs as needed)
+#$ DISCLAIMER: Text of disclaimer (mandatory for VTx Presets)
+#$ WARNING: Text of warning
+#$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/nn
+#$ FORCE_OPTIONS_REVIEW
+
+#$ INCLUDE: presets/4.3/rates/defaults.txt
+
+#<cli command 1>
+#<cli command 2>
+....
+<cli command n>
+
+#$ OPTION BEGIN (CHECKED): Region 1 name
+    <cli command n + 1>
+    <cli command n + 2>
+    ...
+    <cli command m>
+#$ OPTION END
+
+#$ OPTION_GROUP BEGIN: This group name
+    #$ OPTION BEGIN (UNCHECKED): Region 2 name
+        <cli command m + 1>
+        <cli command m + 2>
+    #$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Region 3 name
+        <cli command j + 1>
+        <cli command j + 2>
+        <cli command j + 3>
+    #$ OPTION END
+#$ OPTION_GROUP END
